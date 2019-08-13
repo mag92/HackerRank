@@ -17,7 +17,14 @@ class Result {
 
     public static int pickingNumbers(List<Integer> a) {
     // Sort
-    Collections.sort(a);
+    //Collections.sort(a);
+        
+        // The above sorting was my original solution, which would have
+        // solved the problem in O(N log N) time. Now that I only
+        // have to find a +1 or -1 entry in the hashtable, the
+        // order doesn't matter, so the N log N part is removed and
+        // it's just O(N)
+        
     // Initialize map of freqs
     Map<Integer, Integer> freqs = new HashMap<Integer, Integer>();
 
